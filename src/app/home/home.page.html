@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Cadastro de Receitas
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +9,57 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Área de Cadastro</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+
+    <ion-list>
+      <ion-list-header> <h3> Colabore com sua receita: </h3> </ion-list-header>
+      <ion-item>
+        <ion-label>Nome do autor</ion-label>
+        <ion-input placeholder="" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Idade</ion-label>
+        <ion-input placeholder="" type="number"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <ion-list>
+      <ion-radio-group value="biff">
+
+        <ion-item>
+          <ion-label> Prato Salgado</ion-label>
+          <ion-radio slot="start" value="biff"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Prato Doce</ion-label>
+          <ion-radio slot="start" value="griff"></ion-radio>
+        </ion-item>
+
+
+      </ion-radio-group>
+    </ion-list>
+
+    <ion-item>
+      <ion-label>Tipo de refeição</ion-label>
+      <ion-select>
+        <ion-select-option value="cafemanha">Café da manhã</ion-select-option>
+        <ion-select-option value="almoco">Almoço</ion-select-option>
+        <ion-select-option value="lanche">Lanche</ion-select-option>
+        <ion-select-option value="jantar">Jantar</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <section>
+    <ion-button expand="block" color="success" id="cadastro"  >CADASTRAR RECEITA</ion-button>
+    </section>
+
+    </div>
+
+
 </ion-content>
