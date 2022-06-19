@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" defaultHref="home">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Confirmação</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+  <ion-item>
+    <p>Nome do Autor:&nbsp;</p>
+    <ion-label>{{nomeAutor}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <p>Nome do Livro:&nbsp;</p>
+    <ion-label>{{nomeLivro}}</ion-label>
+  </ion-item>
+
+  <ion-item>
+    <p>Número de Páginas:&nbsp;</p>
+    <ion-label>{{numPaginas}}</ion-label>
+  </ion-item>
+
+  <ion-item>
+    <p>Data de Lançamento:&nbsp;</p>
+    <ion-label>{{dataLancamento}}</ion-label>
+  </ion-item>
+
+  <ion-item>
+    <p>Avaliação do Livro:&nbsp;</p>
+    <ion-label>{{avalLivro}}</ion-label>
+  </ion-item>
+
+  <ion-item>
+    <p>Breve Resenha do Livro:&nbsp;</p>
+    <ion-label>{{avalLivroEsc}}</ion-label>
+  </ion-item>
+</ion-list>
+  <ion-button expand="block" fill="outline" (click)="avancarTela()">Confirmar</ion-button>
+  <ion-button expand="block" fill="outline" (click)="editar()">Editar</ion-button>
+  <ion-button expand="block" fill="outline" (click)="retornarTela()">Retornar</ion-button>
+
+</ion-content>
